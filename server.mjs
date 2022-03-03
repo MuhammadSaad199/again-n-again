@@ -1,6 +1,10 @@
 import express from "express";
 import cors from "cors";
 import dialogflow from '@google-cloud/dialogflow';
+import gcHelper from "google-credentials-helper";
+
+gcHelper();
+
 
 const sessionClient = new dialogflow.SessionsClient();
 
